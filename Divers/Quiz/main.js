@@ -55,6 +55,8 @@ $.get(url, succes = function(data){      // On recup tous les noms
 
 
 function image(data){
+    nb_nom = 0;
+    nom = "";
     texte.value = "";
     gagne = false;
     display_texte.innerText="";
