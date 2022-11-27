@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Jeu</title>
+</head>
+<body>
+    <div id="container">
+    <header>
+        clicker JEU !
+        <input type="submit" value="Comment Jouer ?" id ='CommentJouer'>
+        <div id="InfosJeu">
+            <p>Comment jouer ? <br> <br>
+                Il vous suffit juste de cliquer sur le gros bouton pour infliger des dégats.
+                <br><br> Vous pouvez augmenter vos dégats en achetant des améliorations, mais cela vous coutera de l'argent.
+                <br><br> Tous les 10 kill vous augmentez en niveau, pour débloquer des atouts dans le jeu
+                <br><br> Noubliez pas de récuperer vos données de sauvegarde pour reprendre votre partie plus tard ;) 
+            
+            </p>
+            <input type="submit" value="Revenir au jeu" class = "RetourJeu">
+        </div>
+    </header>
+    <section id="boutons">
+        <p>Augmenter vos dégats :</p>
+        <input type="submit" value="dégats +" id="damage">
+        <p>Récuperer vos données de sauvegarde : </p>
+        <input type="submit" id="but_afficher">
+        <p>Fichier de sauvegarde : </p>
+        <input type="file" value="file" id = "inputFile">
+    </section>  
+    <section id="perso">
+        <div id="money"></div>
+        <div id="degats"></div>
+        <div id="level"></div>
+        <div id="taux"></div>
+        <div id="kill"></div>
+    </section>
+    <section id="clicker">
+        <div id="pv"></div> <br>
+        <input type="submit" value="clic" id="clic">
+    </section>
+    <footer><span id="nom">Kerrian</span></footer>
+</div>
+<div id="afficher">
+    <div id="JSafficher"></div>
+    <br><br><input type="submit" value="Revenir au jeu" class="RetourJeu"></input>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

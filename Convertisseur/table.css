@@ -1,0 +1,21 @@
+body{
+    background: #23242a;
+    display: flex;
+    justify-content: center;
+    color:pink;
+}
+
+thead{
+    font-size: 20px;
+    background-color: #383b45;
+}
+
+td{
+    background-color: #383b45;
+    border:1px solid black;
+}
+a{
+    color:pink;
+    position: absolute;
+    left: 10px;
+}

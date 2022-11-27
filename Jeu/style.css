@@ -1,0 +1,236 @@
+body{
+    background-color: #23242a;
+    padding-right: 10px;
+}
+#container{
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 3fr 5fr ;
+    grid-template-rows: 1fr 3fr 5fr 1fr;
+    gap : 10px;
+    grid-template-areas: "header header"
+                            "perso perso"
+                            "boutons clicker"
+                            "footer footer";
+
+}
+
+header{
+    grid-area: header;
+    color:#03e9f4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 0.5px solid #03e9f4;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+header input{
+    background-color: transparent;
+    border: 0.5px solid #03e9f4;
+    color: #03e9f4;
+    border-radius: 3px;
+    transition: 300ms;
+    cursor: pointer;
+}
+header input:hover{
+    background-color: #03e9f4;
+    color: #23242a;
+    border-color: #23242a;
+    transform: scale(1.1);
+    transition: 300ms;
+}
+header div, header div input{
+    z-index: 1;
+    color:black;
+}
+section > p{
+    padding:0px;
+    margin:0px;
+    padding-left: 2px;
+}
+#perso{   
+    background-color: #00cad4;
+    padding: 10px;
+    grid-area: perso;
+    transition: 300ms;
+}
+#perso:hover{
+    transform: scale(1.025);
+    transition: 300ms;
+}
+#perso > div{
+    margin: 10px;
+}
+
+#pv{
+    font-size: 18px;
+}
+input{
+    margin: 10px;
+}
+#clic{
+    background-color: #23242a;
+    color: #03e9f4;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 100px;
+    width: 200px;
+    cursor: pointer;
+    border-radius: 4px;
+    border-style: none;
+    transition: 300ms;
+}
+#clic:hover{
+    background-color: #3a3c43;
+    color: #03e9f4;
+    transform: scale(1.10);
+    transition: 100ms ease-in-out;
+}
+#clic:active{
+    background-color: #03e9f4;
+    color:#23242a;
+    transition: 10ms;
+}
+#clicker{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #009ba3;
+    grid-area: clicker;
+    transition: 300ms;
+}
+#clicker:hover{
+    transform: scale(1.025);
+    transition: 300ms;
+}
+#clicker #pv{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 4px;
+    color: #03e9f4;
+    background-color: #23242a;
+    width: 20%;
+    text-transform: uppercase;
+}
+#boutons{
+    background-color: #03e9f4;
+    grid-area: boutons;
+    display: flex;
+    flex-direction: column;
+    padding-top:10px;
+    transition: 300ms;
+}
+#boutons:hover{
+    transform: scale(1.05);
+    transition: 300ms;
+}
+#boutons input{
+    background-color: #23242a;
+    color:#03e9f4;
+    cursor: pointer;
+    transition: 300ms;
+    border: 1px solid #23242a;
+}
+#boutons input[type="file"]{
+    border-style: none;
+}
+#boutons input:hover{
+    transition: 300ms ;
+    transform: scale(1.05);
+}
+#afficher{
+        display: none;
+        font-size: 10px;
+        position: fixed;
+        padding: 5px;
+        top: 90px;
+        left:80px;
+        background-color:#3a3c43;
+        color: #03e9f4;
+        font-size: 15px;
+        border-radius: 4px;
+        height: 70vh;
+        width: 70%;
+        border: 1px solid black;
+        text-align: center;
+        z-index: 10;
+    }
+#afficher input{
+    background-color: #03e9f4;
+    border: none;
+    width: 30%;
+    height: 10%;
+    border-radius: 4px;
+    transition: 300ms;
+}
+#afficher input:hover{
+    background-color: #3a3c43;
+    color: #03e9f4;
+    border: 1px solid #03e9f4;
+    transition: 300ms;
+    transform: scale(1.1);
+}
+#boutons p{
+    margin-left: 5px}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: 1px solid black;
+    color:#03e9f4;
+    border: 0.5px solid #03e9f4;
+    grid-area: footer;
+    transition: 300ms;
+}
+footer:hover{
+    background-color: #03e9f4;
+    color: #23242a;
+    transition: 300ms;
+}
+
+/*#afficher{
+    background-color: orange;
+    display: none;
+    position: absolute;
+    padding: 10px;
+    height: 80vh;
+    width: 80vh;
+    background-color: white;
+    left: 100px;
+    top: 100px;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: all 300ms;
+}*/
+
+
+
+#InfosJeu{
+    display: none;
+    font-size: 15px;
+    position: absolute;
+    top: 90px;
+    background-color: #23242a;
+    color: #03e9f4;
+    height: 70vh;
+    width: 70%;
+    border: 1px solid black;
+    text-transform:none;
+}
+#InfosJeu input{
+    background-color: #03e9f4;
+    
+}
+#InfosJeu input:hover{
+    background-color: #23242a;
+    color: #03e9f4;
+    border:1px solid #03e9f4
+}
+#InfosJeu p {
+    margin: 10px;
+    padding: 10px;
+}
