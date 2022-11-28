@@ -30,7 +30,7 @@ submit.addEventListener('click', function() {
             const euro = input.value;
             const coeff = data.exchange_rates.EUR;
             let result = euro * coeff;
-            display.innerText = `${euro} ${devise} = ${result} €, avec un taux de ${coeff}`;})}
+            display.innerText = `${euro} ${devise} = ${result}€, avec un taux de ${coeff}`;})}
     }
     if (corresp===false){
         alert(`${devise} n'existe pas`);
